@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NightSky</title>
+        <!-- anonymized statistics-->
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- bundled ressources -->
+    </head>
+    <body>
+        <!-- Initial values are overwritten by inputs -->
+        <night-sky
+            id="nightSky"
+            layers="4"
+            density="30"
+            velocity-x="0"
+            velocity-y="60"
+            star-color="#000"
+            background-color="transparent"
+        >
+        </night-sky>
+        <div id="content">
+            <img src="crest.png"/>
+            <h1>MUSIC EVENING</h1>
+            <h3>Music Evening</h3>
+            <div id="controls">
+                <div class="controlRow">
+                    <label for="density">Density</label>
+                    <input
+                        id="density"
+                        name="density"
+                        type="range"
+                        min="1"
+                        max="300"
+                        value="70"
+                    >
+                </div>
+                <div class="controlRow">
+                    <label for="layer">Layer Count</label>
+                    <input
+                        id="layer"
+                        name="layer"
+                        type="range"
+                        min="1"
+                        max= "7"
+                        value="5"
+                    >
+                </div>
+                <div class="controlRow">
+                    <label for="velocityX">VelocityX</label>
+                    <input
+                        id="velocityX-slider"
+                        name="velocityX"
+                        type="range"
+                        min="-300"
+                        max="300"
+                        value="60"
+                    >
+                    <input
+                        id="velocityX-input"
+                        name="velocityX"
+                        type="number"
+                        min="-300"
+                        max="300"
+                        value="60"
+                    >
+                </div>
+                <div class="controlRow">
+                    <label for="velocityY">VelocityY</label>
+                    <input
+                        id="velocityY-slider"
+                        name="velocityY"
+                        type="range"
+                        min="-300"
+                        max="300"
+                        value="60"
+                    >
+                    <input
+                        id="velocityY-input"
+                        name="velocityY"
+                        type="number"
+                        min="-300"
+                        max="300"
+                        value="60"
+                    >
+                </div>
+                <div class="controlRow">
+                    <label for="starcolor">Star Color</label>
+                    <input
+                        id="starcolor"
+                        name="starcolor"
+                        type="color"
+                        value="#ffffff"
+                    >
+                </div>
+                <div class="controlRow">
+                    <label for="bgcolor">Background Transparent</label>
+                    <input
+                        id="bgcolor"
+                        name="bgcolor"
+                        type="checkbox"
+                    >
+                </div>
+            </div>
+        </div>
+      <script src="https://unpkg.com/@h0rn0chse/night-sky/dist/bundle.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+</html>

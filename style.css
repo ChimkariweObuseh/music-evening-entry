@@ -1,0 +1,76 @@
+@import url(https://db.onlinewebfonts.com/c/47e607440a59e356fc92cb408ef82ac8?family=Saturday+Moon+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Herr+Von+Muellerhoff&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 100px;
+    color: #30a3ab;
+    z-index: 0;
+    font-family: "Saturday Moon Demo";
+}
+
+h3 {
+    position: absolute;
+    top: 40%;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    letter-spacing: 55px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    top: 5%;
+    border: 3px solid black;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    background: black;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+#nightSky {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(123, 25, 214, 0.5);
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.controlRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;;
+}
+
+.controlRow * {
+    margin-right: 0.5em;
+}
